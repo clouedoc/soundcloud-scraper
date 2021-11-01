@@ -24,14 +24,10 @@ jobs:
         with:
           node-version: "14" # the Node version of our project
       - name: Install dependencies
-        working-directory: ./no-selenium-supabase
         run: yarn install
       - name: Build
-        working-directory: ./no-selenium-supabase
         run: yarn build
       - name: Lint
-        working-directory: ./no-selenium-supabase
         run: yarn lint
       - name: Check circular dependencies
-        working-directory: ./no-selenium-supabase
         run: yarn detect-circular-dependencies
