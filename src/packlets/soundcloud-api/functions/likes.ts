@@ -4,8 +4,6 @@ import { printDebugInformations, soundcloudClientId } from "../constants";
 import { SoundcloudLikeCollectionSchema } from "../schemas/like-collection";
 import { SoundcloudLike } from "../types/like";
 
-jest.setTimeout(60000);
-
 export async function getLikes(
   userId: number | string,
   options?: {
