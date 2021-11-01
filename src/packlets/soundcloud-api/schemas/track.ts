@@ -16,6 +16,7 @@ export const SoundcloudTrackSchema = z
     release_date: z.string().nullable(),
     streamable: z.boolean(),
     title: z.string(),
+    permalink_url: z.string(),
     user: z
       .object({
         kind: z.literal("user"),
