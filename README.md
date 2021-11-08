@@ -6,6 +6,15 @@ A soundcloud scraper
 
 `sax`
 
+## Development
+
+In two different windows, run the following commands:
+
+```bash
+yarn watch:lint
+yarn watch:build
+```
+
 ## Link binary
 
 ```bash
