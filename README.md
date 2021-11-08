@@ -1,11 +1,10 @@
-# Boilerplate
+# soundcloud-scraper
 
-This repository contains boilerplate for my TypeScript projects.
+A soundcloud scraper
 
-## To edit
+## Run
 
-1. "bin" name in `package.json` and "bin" in "oclif" in `package.json`
-2. Package name in `package.json`
+`sax`
 
 ## Link binary
 

@@ -1,6 +1,6 @@
 {
-  "name": "boilerplate",
-  "description": "Another TypeScript boilerplate.",
+  "name": "sax",
+  "description": "Soundcloud scraper",
   "dependencies": {
     "@oclif/command": "^1.8.0",
     "got": "^11.8.2",
@@ -8,7 +8,7 @@
     "zod": "^3.11.6"
   },
   "bin": {
-    "boilerplate": "./bin/run"
+    "sax": "./bin/run"
   },
   "devDependencies": {
     "@oclif/dev-cli": "^1.26.0",
@@ -46,10 +46,9 @@
   "main": "lib/index.js",
   "oclif": {
     "commands": "./lib/commands",
-    "bin": "boilerplate",
+    "bin": "sax",
     "plugins": [
       "@oclif/plugin-help",
-      "@oclif/plugin-warn-if-update-available",
       "@oclif/plugin-not-found"
     ]
   }
