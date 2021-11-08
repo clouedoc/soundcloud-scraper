@@ -19,6 +19,7 @@
     "eslint": "^7",
     "jest": "^27.3.1",
     "madge": "^5.0.1",
+    "nodemon": "^2.0.14",
     "prettier": "^2.4.1",
     "ts-jest": "^27.0.7",
     "typescript": "4.2.4"
@@ -32,7 +33,9 @@
     "lint": "eslint ./src",
     "detect-circular-dependencies": "yarn madge --circular --extensions ts ./src",
     "postpack": "rm -f oclif.manifest.json",
-    "prepack": "rm -rf lib && tsc -b && oclif-dev manifest && oclif-dev readme"
+    "prepack": "rm -rf lib && tsc -b && oclif-dev manifest && oclif-dev readme",
+    "watch:lint": "nodemon --exec yarn lint --config ./nodemon.json",
+    "watch:build": "nodemon --exec yarn build --config ./nodemon.json"
   },
   "engines": {
     "node": "14"
