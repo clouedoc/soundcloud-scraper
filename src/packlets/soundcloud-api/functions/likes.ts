@@ -4,7 +4,7 @@ import { printDebugInformations, soundcloudClientId } from "../constants";
 import { SoundcloudLikeCollectionSchema } from "../schemas/like-collection";
 import { SoundcloudLike } from "../types/like";
 
-export async function getLikes(
+export async function fetchUserLikes(
   userId: number | string,
   options?: {
     limit?: number;

@@ -2,7 +2,7 @@
 /* eslint-disable @typescript-eslint/explicit-member-accessibility */
 /* eslint-disable @typescript-eslint/typedef */
 import { Command } from "@oclif/command";
-import { getLikes } from "../packlets/soundcloud-api";
+import { fetchUserLikes } from "../packlets/soundcloud-api";
 
 export default class Likes extends Command {
   static description =
@@ -17,7 +17,7 @@ export default class Likes extends Command {
 
     this.log("Fetching likes of user ID " + args.userId);
 
-    const likes = await getLikes(args.userId);
+    const likes = await fetchUserLikes(args.userId);
     const tracks = likes.filter((l) => !!l.track);
 
     this.log("Printing user likes (" + tracks.length + ")");
